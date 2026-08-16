@@ -1,0 +1,53 @@
+{
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 150,
+  "classes": [
+    "Critical",
+    "Healthy",
+    "Warning"
+  ],
+  "features": [
+    "temperature",
+    "vibration",
+    "pressure",
+    "voltage",
+    "current",
+    "rpm",
+    "operating_hours"
+  ],
+  "feature_importances": {
+    "temperature": 0.31170094380814123,
+    "vibration": 0.3044005585231762,
+    "pressure": 0.06291489527432169,
+    "voltage": 0.08791044478837305,
+    "current": 0.13901754084879214,
+    "rpm": 0.06837721522017096,
+    "operating_hours": 0.025678401537024765
+  },
+  "metrics": {
+    "test_accuracy": 0.9925,
+    "healthy_f1": 0.9967948717948718,
+    "warning_f1": 0.9629629629629629,
+    "critical_f1": 0.9894736842105263,
+    "confusion_matrix": [
+      [
+        622,
+        4,
+        0
+      ],
+      [
+        0,
+        78,
+        1
+      ],
+      [
+        0,
+        1,
+        94
+      ]
+    ]
+  },
+  "training_samples": 3500,
+  "test_samples": 800,
+  "created_at": "2026-08-15T20:40:00Z"
+}
